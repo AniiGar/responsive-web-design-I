@@ -226,9 +226,12 @@ body {
     header nav a {
         justify-content: center;
         border-bottom: 1px solid black;
+        width: 100%;
     }
 
     .topA {
+        width: 100%;
+        text-align: center;
         border-top: 1px solid black;
     }
 
