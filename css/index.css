@@ -69,7 +69,7 @@ body {
 	padding: 10px 50px;	
 }
 
-.navigation {
+.head {
 	display: flex;
 	justify-content: space-between;
 }
@@ -179,6 +179,86 @@ body {
 	margin: 0 auto;
 	padding: 5%;
 	text-align: center;
+}
+
+@media( max-width: 800px ){
+    header {
+        display: flex;
+        flex-direction: column-reverse;      
+    }
+
+    .CTA {
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    .codeSnippet {
+        display: none;
+    }
+
+    nav {
+        justify-content: space-evenly;
+        margin: 30px auto 50px auto;
+    }
+
+    header img {
+        margin: 0px auto;
+        width: 200px;
+        height: 50px;
+    }
+
+    .cta {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      
+    .cta img {
+        display: none;        
+      }  
+  }
+
+@media( max-width: 500px ) {
+    header nav {
+        display: flex;
+        flex-direction: column;          
+    }
+
+    header nav a {
+        justify-content: center;
+        border-bottom: 1px solid black;
+    }
+
+    .topA {
+        border-top: 1px solid black;
+    }
+
+    header img {
+        margin: 0px auto;
+        width: 200px;
+        height: 50px;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .topContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgDiv {
+        padding: 3% 0% 2% 0%;
+    }
+
+    .bottomContent {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .product {
+        padding: 3% 0%;
+    }
 }
 
 /* Service Page */
